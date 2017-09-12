@@ -3,7 +3,11 @@
 ````java    
   @GetMapping("/create")
   public   String   create(Model   model)   {
-         model.addAttribute("student",   new   Student());  }       return   "create";
+         model.addAttribute("student",   new   Student());  
+         return   "create";
+  }           
+         
+  
 
   @PostMapping("/create")
   public   String   create(@ModelAttribute   Student   stu)   {
